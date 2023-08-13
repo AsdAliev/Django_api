@@ -16,9 +16,7 @@
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    {% block css %}
-    
-    {% endblock %}
+    {% block css %} {% endblock %}
 
 </head>
 
@@ -66,16 +64,9 @@
     </div>
 </nav>
 
-<!-- Page Content -->
-{
-{% block content %}
+{% block content %} {% endblock %}
 
-{% endblock %}
-}
-
-{% block footer %}
-
-{% endblock %}
+{% block footer %} {% endblock %}
 
 <!-- Bootstrap core JavaScript -->
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
